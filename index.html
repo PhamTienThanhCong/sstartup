@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>DiaCare</title>
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 
@@ -19,7 +19,7 @@
         <div class="inner-header flex">
             <!--Just the logo.. Don't mind this-->
 
-            <h3>Login</h3>
+            <h3>DiaCare</h3>
         </div>
 
         <!--Waves Container-->
@@ -45,18 +45,25 @@
 
     <!--Content starts-->
     <div class="content flex">
-        <form>
-            <input type="text" placeholder="Username" onfocus="this.placeholder = ''"
-                onblur="this.placeholder = 'Username'" />
-            <input type="password" placeholder="Password" onfocus="this.placeholder = ''"
-                onblur="this.placeholder = 'Password'" />
-            <button class="login-btn">Login</button>
+        <form id="login-form">
+            <input type="text" placeholder="Số Điện Thoại" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Số Điện Thoại'" />
+            <input type="password" placeholder="Mật Khẩu" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Mật Khẩu'" />
+            <button class="login-btn">Đăng Nhập</button>
         </form>
         <div class="bottom-container">
-            <p>Not registered with us?</p><a href="#">Sign Up!</a>
+            <p>Chưa có tài khoản? </p><a href="#">đăng kí!</a>
             <div>
 
                 <!--Content ends-->
 </body>
+
+<script>
+    document.getElementById('login-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        document.location.href = "./template/index.html";
+    });
+</script>
 
 </html>
