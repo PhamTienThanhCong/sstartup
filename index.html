@@ -51,10 +51,10 @@
 
     <!--Content starts-->
     <div class="content flex">
-        <form id="login-form">
-            <input type="text" placeholder="Số Điện Thoại" onfocus="this.placeholder = ''"
+        <form id="login-form" method="GET" >
+            <input type="text" id="phone-number" placeholder="Số Điện Thoại" onfocus="this.placeholder = ''"
                 onblur="this.placeholder = 'Số Điện Thoại'" />
-            <input type="password" placeholder="Mật Khẩu" onfocus="this.placeholder = ''"
+            <input type="password" id="pass-world" placeholder="Mật Khẩu" onfocus="this.placeholder = ''"
                 onblur="this.placeholder = 'Mật Khẩu'" />
             <button class="login-btn">Đăng Nhập</button>
         </form>
@@ -66,9 +66,28 @@
 </body>
 
 <script>
+    function isVietnamesePhoneNumber(number) {
+       return /(03|05|07|08|09|01[2|6|8|9])+([0-9]{8})\b/.test(number);
+    }
     document.getElementById('login-form').addEventListener('submit', function (e) {
         e.preventDefault();
-        document.location.href = "./home/index.html"; 
+        let phoneNumber = document.getElementById('phone-number').value;
+        let passWorld = document.getElementById('pass-world').value;
+        if(phoneNumber.length == 0){
+            alert('Vui lòng nhập số điện thoại');
+
+        }else if(passWorld.length == 0){
+            alert('Mật khẩu không được để trống');
+
+        }else if (!isVietnamesePhoneNumber(phoneNumber)) {
+            alert('Số điện thoại không hợp lệ');
+
+        }else if(phoneNumber == '0987654321' && passWorld == '123456'){
+            alert('Đăng nhập thành công');
+            document.location.href = "./home/index.html";
+        }else{
+            alert('Số điện thoại hoặc mật khẩu không đúng');
+        }
     });
 </script>
 
