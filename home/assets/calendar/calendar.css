@@ -1,4 +1,36 @@
+/* calendar */
 /* medication schedule */
+.calendar__container ul{
+    display: flex;
+    flex-direction: row;
+}
+.calendar__container li{
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    margin: 4px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: 2px solid hsl(174, 63%, 40%);
+}
+.calendar__container span{
+    font-weight: bold;
+}
+.medication__title{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px;
+}
+.medication__title .btn__add{
+    width: 40px;
+    border:2px solid hsl(174, 63%, 40%);
+    border-radius:50% ;
+    color: hsl(174, 63%, 40%);
+    font-weight: bold;
+}
 .medication__container{
     display: flex;
     justify-content: space-between;
@@ -20,4 +52,17 @@
   .medication__container input{
     margin-right: 6%;
     transform: scale(2);
+
+  }
+  .medicine__container{
+    margin-bottom: 100px;
+  }
+  .medicine__container button{
+    font-size: 30px;
+    width: 22vw;
+    height: 22vw;
+    background-color: hsl(0, 1%, 86%);
+    border-radius: 10px;
+    color: hsl(174, 63%, 40%);
+    border: 2px solid hsl(174, 63%, 40%);
   }
