@@ -296,19 +296,20 @@ img {
   align-items: center;
   flex-direction: row;
   margin-top: 20px;
-  background-color: hsl(174, 63%, 40%);
+  background-color: hsl(0, 1%, 86%);
   width: 96%;
   margin: 10% auto;
   border-radius: 10px;
-  color: #FFF;
+  color: hsl(174, 63%, 40%);
+  border: 2px solid hsl(174, 63%, 40%);
 }
-.medication__container img{
-  width: 100px;
-  height: 100px;
+.medication__container i{
+  font-size: 70px;
   margin: 10px;
   border-radius: 10px;
 }
 .medication__container input{
   margin-right: 6%;
   transform: scale(2);
+  outline: hsl(174, 63%, 40%);
 }
