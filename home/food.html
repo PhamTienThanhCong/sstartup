@@ -51,7 +51,7 @@
                         </li>
 
                         <li class="nav__item">
-                            <a href="#skills" class="nav__link">
+                            <a href="./food.html" class="nav__link">
                                 <span class="material-symbols-outlined">
                                     menu_book
                                     </span>
@@ -82,7 +82,7 @@
         </header>
 
         <main>
-            <a href="#">
+            <a href="./menu.html">
                 <div class="box1">
                   <div class="box1__content">
                     <div class="box1__text" style="position: relative">
@@ -105,7 +105,7 @@
                   </div>
                 </div>
               </a>
-              <a href="#">
+              <a href="#" onclick="openCamera()">
                 <div
                   class="box1"
                   style="background-color: rgb(182, 39, 39); margin-top: 30px"
@@ -129,11 +129,17 @@
                   </div>
                 </div>
               </a>
+              <input id="camera" style="display: none;" type="file" accept="image/*" capture="camera">
 
         </main>
         
 
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
+        <script>
+          function openCamera() {
+            document.getElementById('camera').click();
+          }
+        </script>
     </body>
 </html>
