@@ -101,3 +101,7 @@
   
     outline: hsl(174, 63%, 40%);
   }
+  .temp{
+    width: 100%;
+    height: 80px;
+  }
