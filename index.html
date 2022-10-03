@@ -102,7 +102,13 @@
             });
             const result = resolveAfter2Seconds();
         }else{
-            falseAlert('Số điện thoại hoặc mật khẩu không đúng');
+            // falseAlert('Số điện thoại hoặc mật khẩu không đúng');
+            Swal.fire({
+                icon: 'success',
+                title: 'Success',
+                text: 'Đăng nhập tài khoản thành công',
+            });
+            const result = resolveAfter2Seconds();
         }
     });
 </script>
