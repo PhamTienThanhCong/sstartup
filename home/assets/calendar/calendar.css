@@ -1,0 +1,23 @@
+/* medication schedule */
+.medication__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+    background-color: hsl(174, 63%, 40%);
+    width: 96%;
+    margin: 10% auto;
+    border-radius: 10px;
+    color: #FFF;
+  }
+  .medication__container img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  .medication__container input{
+    margin-right: 6%;
+    transform: scale(2);
+  }
