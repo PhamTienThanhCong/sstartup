@@ -105,7 +105,7 @@
                   </div>
                 </div>
               </a>
-              <a href="./camera.html">
+              <a href="#" onclick="openCamera()">
                 <div
                   class="box1"
                   style="background-color: rgb(182, 39, 39); margin-top: 30px"
@@ -129,11 +129,17 @@
                   </div>
                 </div>
               </a>
+              <input id="camera" style="display: none;" type="file" accept="image/*" capture="camera">
 
         </main>
         
 
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
+        <script>
+          function openCamera() {
+            document.getElementById('camera').click();
+          }
+        </script>
     </body>
 </html>
