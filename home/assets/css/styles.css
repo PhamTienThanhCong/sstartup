@@ -287,6 +287,18 @@ img {
   border: 2px solid hsl(174, 63%, 40%);
   color: hsl(174, 63%, 40%);
 }
+<<<<<<< HEAD
+.box_op a ul li{
+  color: rgb(5, 12, 47);
+  font-weight: bold;
+  font-size: 18px;
+}
+.box_op a ul li span{
+  position: absolute;
+  
+  left: 80px;
+}
+=======
 
 
 /* medication schedule */
@@ -311,5 +323,10 @@ img {
 .medication__container input{
   margin-right: 6%;
   transform: scale(2);
+<<<<<<< HEAD
   outline: hsl(174, 63%, 40%);
 }
+=======
+}
+>>>>>>> 380bff13e88544e5615c198dfbe92175092622b1
+>>>>>>> e2c4c28c18bce5fea369864490726808240d9ceb
