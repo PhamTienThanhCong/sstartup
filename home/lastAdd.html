@@ -8,8 +8,8 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
         <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="./assets/css/styles.css">
-
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/food/style.css">
         <title>DIACARE</title>
         <link rel="apple-touch-icon" sizes="180x180" href="./assets/faviicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="./assets/faviicon/favicon-32x32.png">
@@ -18,6 +18,7 @@
         <link rel="mask-icon" href="./assets/faviicon/safari-pinned-tab.svg" color="#5bbad5">
         <script src="https://kit.fontawesome.com/3e1099c5f4.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="./assets/css/option/style.css">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
     </head>
@@ -43,14 +44,14 @@
                         </li>
                         
                         <li class="nav__item">
-                            <a href="./option.html" class="nav__link active-link">
+                            <a href="./option.html" class="nav__link">
                                 <i class="fa-solid fa-heart-pulse"></i>
                                 <span class="nav__name">Chức năng</span>
                             </a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="./menu.html" class="nav__link">
+                            <a href="./food.html" class="nav__link active-link">
                                 <span class="material-symbols-outlined">
                                     menu_book
                                     </span>
@@ -80,35 +81,88 @@
             </nav>
         </header>
 
-        <main>
-            <!--=============== HOME ===============-->
-            <section class="container section section__height" id="home">
-                <h2 class="section__title">Trang chủ</h2>
-            </section>
+        <main style="margin-top:180px">
+            <a href="./TrieuChung.html">
+                <div class="box1" style="background-color: rgb(70,49,184);">
+                  <div class="box1__content">
+                    <div class="box1__text" style="position: relative">
+                      <span class="title_box1"> <b>Triệu chứng</b> </span>
+                      
+                        <i class="fa-solid fa-bars"
+                        style="
+                          margin-left: 212px;
+                          position: absolute;
+                          right: 20px;
+                          top: 50%;
+                          transform: translateY(-50%);
+                          font-size: 40px;
+                        "
+                      ></i>
+                      <p class="box1__description">
+                        <p>Chọn triệu chứng</p>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!--next -->
+              <a href="./Sodo.html" >
+                <div
+                  class="box1"
+                  style="background-color: rgb(182, 39, 39); margin-top: 30px"
+                >
+                  <div class="box1__content" style="position: relative">
+                    <div class="box1__text">
+                      <div class="title_box1"><b>Số đo</b></div>
+                      <i
+                         class="fa-solid fa-person"
+                        style="
+                          margin-left: 212px;
+                          position: absolute;
+                          right: 20px;
+                          top: 50%;
+                          transform: translateY(-50%);
+                          font-size: 40px;
+                        "
+                      ></i>
+                      <p class="box1__description">Nhập vào cân nặng và chiều cao của bạn</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <input id="camera" style="display: none;" type="file" accept="image/*" capture="camera">
+              <!--next -->
+              <a style="padding: 40px;" href="./ghiChu.html">
+                <div class="box1" style="background-color:rgb(254,195,37)">
+                  <div class="box1__content" >
+                    <div class="box1__text" style="position: relative">
+                      <span class="title_box1"> <b>Ghi chú</b> </span>
+                        <i class="fa-solid fa-notes-medical"
+                        style="
+                          margin-left: 212px;
+                          position: absolute;
+                          right: 20px;
+                          top: 50%;
+                          transform: translateY(-50%);
+                          font-size: 40px;
+                        "
+                      ></i>
+                      <p class="box1__description">
+                        <p>Ghi chú tại đây</p>
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
-            <!--=============== ABOUT ===============-->
-            <section class="container section section__height" id="about">
-                <h2 class="section__title">Chức năng</h2>
-            </section>
-
-            <!--=============== SKILLS ===============-->
-            <section class="container section section__height" id="skills">
-                <h2 class="section__title">Dinh Dưỡng</h2>
-            </section>
-
-            <!--=============== PORTFOLIO ===============-->
-            <section class="container section section__height" id="portfolio">
-                <h2 class="section__title">Uống thuốc</h2>
-            </section>
-
-            <!--=============== CONTACTME ===============-->
-            <section class="container section section__height" id="contactme">
-                <h2 class="section__title">Khẩn cấp</h2>
-            </section>
         </main>
         
 
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
+        <script>
+          function openCamera() {
+            document.getElementById('camera').click();
+          }
+        </script>
     </body>
 </html>

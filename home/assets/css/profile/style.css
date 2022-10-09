@@ -1,0 +1,13 @@
+.phone-frame {	
+	height: 667px;
+}
+
+#tabs .active {
+	border-color: #0072bc;
+	color: #0072bc;
+	font-weight: bold
+}
+
+.container{
+    width: auto;
+}
