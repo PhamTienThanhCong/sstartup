@@ -257,3 +257,43 @@ img {
   }
 }
 
+
+/* button */
+.btn__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.btn__container a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2vw;
+  width: 45vw;
+  height: 45vw;
+  border-radius: 10px;
+  background-color: hsl(174, 63%, 40%);
+  color: rgb(255, 255, 255);
+  
+}
+.btn__container a i{
+  font-size: 50px;
+}
+#add__btn{
+  background-color: #FFF;
+  border: 2px solid hsl(174, 63%, 40%);
+  color: hsl(174, 63%, 40%);
+}
+.box_op a ul li{
+  color: rgb(5, 12, 47);
+  font-weight: bold;
+  font-size: 18px;
+}
+.box_op a ul li span{
+  position: absolute;
+  
+  left: 80px;
+}
