@@ -87,43 +87,43 @@
             </nav>
         </header>
 
-        <main>
+        <main id="root">
             <div class="symptom" style="margin-top:60px;padding: 10px;">
                 <div class="symptom__container bd-grid">
                     <div class="symptom__data">
                         <h2 class="symptom__title" style="margin-bottom: 20px;" ><b> Triệu chứng:</b></h2>
-                        <a href="./TC_Thi_Luc.html" >
-                            <div class="box" style="width:100%; padding: 10px 20px; border: 1px solid rgb(75, 60, 160); background-color: rgb(106, 93, 180); color: white;border-radius: 7px; margin-bottom: 10px;">
+                        <a onclick="change_visible(4)">
+                            <div class="box" style="width:100%; padding: 10px 20px; border: 1px solid rgb(75, 60, 160); background-color: hsl(174, 63%, 40%); color: white;border-radius: 7px; margin-bottom: 10px; font-size: 18px;">
                                 <h1 style="margin:2px">Thị lực</h1>
                                 <p> </p>
                             </div>
                         </a>
-                        <a href="./TC_XucGiac.html" >
-                            <div class="box" style="width:100%; padding: 10px 20px; border: 1px solid rgb(75, 60, 160); background-color: rgb(106, 93, 180); color: white;border-radius: 7px; margin-bottom: 10px;">
+                        <a onclick="change_visible(5)">
+                            <div class="box" style="width:100%; padding: 10px 20px; border: 1px solid rgb(75, 60, 160); background-color: hsl(174, 63%, 40%); color: white;border-radius: 7px; margin-bottom: 10px; font-size: 18px;">
                                 <h1 style="margin:2px">Xúc giác</h1>
                                 <p> </p>
                             </div>
                         </a>
-                        <a href="./TC_MatNgu.html" >
-                            <div class="box" style="width:100%; padding: 10px 20px; border: 1px solid rgb(75, 60, 160); background-color: rgb(106, 93, 180); color: white;border-radius: 7px; margin-bottom: 10px;">
+                        <a onclick="change_visible(2)">
+                            <div class="box" style="width:100%; padding: 10px 20px; border: 1px solid rgb(75, 60, 160); background-color: hsl(174, 63%, 40%); color: white;border-radius: 7px; margin-bottom: 10px; font-size: 18px;">
                                 <h1 style="margin:2px">Mất ngủ</h1>
                                 <p> </p>
                             </div>
                         </a>
-                        <a href="./TC_MetMoi.html" >
-                            <div class="box" style="width:100%; padding: 10px 20px; border: 1px solid rgb(75, 60, 160); background-color: rgb(106, 93, 180); color: white;border-radius: 7px; margin-bottom: 10px;">
+                        <a onclick="change_visible(3)">
+                            <div class="box" style="width:100%; padding: 10px 20px; border: 1px solid rgb(75, 60, 160); background-color: hsl(174, 63%, 40%); color: white;border-radius: 7px; margin-bottom: 10px; font-size: 18px;">
                                 <h1 style="margin:2px">Mệt mỏi</h1>
                                 <p> </p>
                             </div>
                         </a>
-                        <a href="./TC_ChanAn.html" >
-                            <div class="box" style="width:100%; padding: 10px 20px; border: 1px solid rgb(75, 60, 160); background-color: rgb(106, 93, 180); color: white;border-radius: 7px; margin-bottom: 10px;">
+                        <a onclick="change_visible(1)">
+                            <div class="box" style="width:100%; padding: 10px 20px; border: 1px solid rgb(75, 60, 160); background-color: hsl(174, 63%, 40%); color: white;border-radius: 7px; margin-bottom: 10px; font-size: 18px;">
                                 <h1 style="margin:2px">Chán ăn</h1>
                                 <p> </p>
                             </div>
                         </a>
                     </div>
-                    <button style="width: 100%; margin-top: 20px; background-color: rgb(125, 243, 95); padding: 10px; border-radius: 10px; font-size: 18px;">
+                    <button onclick="chan_doan()" style="width: 100%; margin-top: 20px; background-color: rgb(9, 35, 180); padding: 10px; border-radius: 10px; font-size: 18px; color: white;">
                         Tiến hành chẩn đoán
                     </button>
                 </div>
@@ -140,5 +140,6 @@
 
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
+        <script src="./assets/js/TrieuChung/trieuchung.js" ></script>
     </body>
 </html>
