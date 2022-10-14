@@ -1,5 +1,8 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@font-face {
+    font-family: AmpleSoft;
+    src: url("./FontsFree-Net-AmpleSoftPro.ttf");
+}
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -16,7 +19,7 @@
   --container-color: #FFF;
 
   /*========== Font and typography ==========*/
-  --body-font: 'Open Sans', sans-serif;
+  --body-font: 'AmpleSoft', sans-serif;
   --h1-font-size: 1.5rem;
   --normal-font-size: .938rem;
   --tiny-font-size: .625rem;
@@ -103,7 +106,7 @@ img {
 .nav {
   height: var(--header-height);
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -257,3 +260,7 @@ img {
   }
 }
 
+.name-logo{
+  font-size: 24px;
+  flex-wrap: wrap;
+}
