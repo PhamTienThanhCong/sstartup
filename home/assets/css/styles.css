@@ -125,7 +125,7 @@ img {
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   .nav__menu {
     position: fixed;
     bottom: 0;
@@ -201,14 +201,14 @@ img {
 }
 
 /* For medium devices */
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 767px) {
   .nav__list {
     justify-content: center;
     column-gap: 3rem;
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1024px) {
   body {
     margin: 0;
   }
