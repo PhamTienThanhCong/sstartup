@@ -263,4 +263,5 @@ img {
 .name-logo{
   font-size: 24px;
   flex-wrap: wrap;
+  color: hsl(174, 63%, 40%);
 }
