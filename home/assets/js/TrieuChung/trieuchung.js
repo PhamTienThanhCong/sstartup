@@ -1,4 +1,18 @@
 let data = ["", "", "", "", ""];
+
+function goChu(){
+    document.getElementById("data-input").value = "";
+    let type_code = "Đau nhức xương khớp, Mỏi đầu gối";
+    let index = 0;
+    const run = setInterval(function(){
+        document.getElementById("data-input").value += type_code[index];
+        index++;
+        if (index == type_code.length){
+            clearInterval(run);
+        }
+    }, 100);
+}
+
 let current = 0;
 var content = [
     `<div class="symptom" style="margin-top:60px;padding: 10px;">
@@ -201,6 +215,9 @@ function change_visible(index){
         if(data[current - 1] != ""){
             document.getElementById("data-input").value =  data[current - 1] + "";
         }
+        if (current == 5){
+            goChu();
+        }
     }
 }
 
@@ -210,6 +227,9 @@ function chan_doan(){
     <div class="symptom__container bd-grid">
         <div class="symptom__data">
             <h2 class="symptom__title" style="margin-bottom: 10px; font-size: 20px;" ><b> Xem xét chẩn đoán bệnh chứng:</b></h2>
+            <p style="font-size: 16px;">
+                Dấu hiệu xúc giác : ${data[4]}
+            </p>
             <p style="font-size: 16px;">
                 Dấu hiệu chán ăn : ${data[0]}
             </p>
@@ -221,9 +241,6 @@ function chan_doan(){
             </p>
             <p style="font-size: 16px;">
                 Dấu hiệu thị lực : ${data[3]}
-            </p>
-            <p style="font-size: 16px;">
-                Dấu hiệu xúc giác : ${data[4]}
             </p>
             <h2 class="symptom__title" style="margin-top: 10px; font-size: 22px;" ><b> Kết Quả:</b></h2>
             <div style="width: 100%;">
