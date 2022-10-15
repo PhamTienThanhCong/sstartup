@@ -1,4 +1,4 @@
-let data = [null, null, null, null, null];
+let data = ["", "", "", "", ""];
 let current = 0;
 var content = [
     `<div class="symptom" style="margin-top:60px;padding: 10px;">
@@ -198,7 +198,7 @@ function change_visible(index){
     }else{
         current = index;
         root.innerHTML = content[current];
-        if(data[current - 1] != null){
+        if(data[current - 1] != ""){
             document.getElementById("data-input").value =  data[current - 1] + "";
         }
     }
@@ -217,10 +217,13 @@ function chan_doan(){
                 Dấu hiệu mất ngủ : ${data[1]}
             </p>
             <p style="font-size: 16px;">
-                Dấu hiệu thị lực : ${data[2]}
+                Dấu hiệu mệt mỏi : ${data[2]}
             </p>
             <p style="font-size: 16px;">
-                Dấu hiệu xúc giác : ${data[3]}
+                Dấu hiệu thị lực : ${data[3]}
+            </p>
+            <p style="font-size: 16px;">
+                Dấu hiệu xúc giác : ${data[4]}
             </p>
             <h2 class="symptom__title" style="margin-top: 10px; font-size: 22px;" ><b> Kết Quả:</b></h2>
             <div style="width: 100%;">
@@ -229,7 +232,7 @@ function chan_doan(){
                 </span>
             </div>
             <p style="font-size: 20px; text-align: center;color: brown;">    
-                nguy cơ bị bệnh gout. bạn hãy đi khám để có kết quả chính xác hơn
+                Nguy cơ bị bệnh gout. Bạn hãy đi khám để có kết quả chính xác hơn
             </p>
         </div>
     
