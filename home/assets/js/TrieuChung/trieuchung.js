@@ -2,7 +2,7 @@ let data = ["", "", "", "", ""];
 
 function goChu(){
     document.getElementById("data-input").value = "";
-    let type_code = "Đau nhức xương khớp, Mỏi đầu gối";
+    let type_code = "Đau nhức khớp ngón chân, mỏi đầu gối";
     let index = 0;
     const run = setInterval(function(){
         document.getElementById("data-input").value += type_code[index];
@@ -10,7 +10,7 @@ function goChu(){
         if (index == type_code.length){
             clearInterval(run);
         }
-    }, 100);
+    }, 70);
 }
 
 let current = 0;
