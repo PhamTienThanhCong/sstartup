@@ -49,7 +49,7 @@ var content = [
                     <p> </p>
                 </div>
             </a>
-        </div>
+        </div> 
         <button onclick="chan_doan()" style="width: 100%; margin-top: 20px; background-color: rgb(9, 35, 180); padding: 10px; border-radius: 10px; font-size: 18px; color: white;">
             Tiến hành chẩn đoán
         </button>
